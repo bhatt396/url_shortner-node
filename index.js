@@ -11,8 +11,8 @@ app.use("/url", urlRoutes);
 connectToDatabase('mongodb://127.0.0.1:27017/short-url')
   .then(() => {
     console.log('✅ MongoDB connected');
-    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+    app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
   })
   .catch((err) => {
-    console.error('❌ Database connection error:', err);
+    console.error(' Database connection error:', err);
   });
